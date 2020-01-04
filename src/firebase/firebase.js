@@ -3,14 +3,14 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 var config = {
-  apiKey: 'AIzaSyAzD6El6PXG_UVg1EwKs_ELkAZWrDqvZLU',
-  authDomain: 'ecommerz-990b1.firebaseapp.com',
-  databaseURL: 'https://ecommerz-990b1.firebaseio.com',
-  projectId: 'ecommerz-990b1',
-  storageBucket: 'ecommerz-990b1.appspot.com',
-  messagingSenderId: '701207838323',
-  appId: '1:701207838323:web:06614af0ee677fc60bb406',
-  measurementId: 'G-22CXG8KMZ9'
+  apiKey: 'YOUR_API_KEY',
+  authDomain: 'YOUR_AUTH_DOMAIN',
+  databaseURL: 'YOUR_DATABASE_URL',
+  projectId: 'YOUR_PROJECT_ID',
+  storageBucket: 'YOUR_STORAGE_BUCKET',
+  messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
+  appId: 'YOUR_APP_ID',
+  measurementId: 'YOUR_MEASUREMENT_ID'
 };
 
 firebase.initializeApp(config);
