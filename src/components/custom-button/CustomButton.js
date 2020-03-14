@@ -1,8 +1,15 @@
 import React from 'react';
 
-const CustomButton = ({ children, isGoogleRegister, ...otherProps }) => (
+const CustomButton = ({
+  children,
+  isGoogleRegister,
+  inverted,
+  ...otherProps
+}) => (
   <button
-    className={`${isGoogleRegister ? `google-register` : ''} custom-button`}
+    className={`${isGoogleRegister ? `google-register` : ''} ${
+      inverted ? `inverted` : ''
+    } custom-button`}
     {...otherProps}
   >
     {children}
