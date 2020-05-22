@@ -15,4 +15,19 @@ const mapStateToProps = (state, ownProps) => ({
   collection: selectCollection(ownProps.match.params.collectionId)(state),
 });
 
+/* simplify version of above mapStateToProps */
+/*
+const makeMapStateToProps = (state, ownProps) => {
+  const getCollection = selectCollection(ownProps.match.params.collectionId);
+
+  const mapStateToProps = (state, ownProps) => {
+    return {
+      collection: getCollection(state, ownProps),
+    };
+  };
+
+  return mapStateToProps;
+};
+*/
+
 export default connect(mapStateToProps)(CollectionPage);
