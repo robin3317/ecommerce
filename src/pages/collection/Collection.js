@@ -1,6 +1,9 @@
 import React from 'react';
+import { selectCollection } from '../../redux/shop/shop.selectors';
+import { connect } from 'react-redux';
 
-const CollectionPage = ({ match }) => {
+const CollectionPage = ({ collection }) => {
+  console.log(collection);
   return (
     <div className="category">
       <h2>COLLECTION PAGE</h2>
@@ -8,4 +11,8 @@ const CollectionPage = ({ match }) => {
   );
 };
 
-export default CollectionPage;
+const mapStateToProps = (state, ownProps) => ({
+  collection: selectCollection(ownProps.match.params.collectionId)(state),
+});
+
+export default connect(mapStateToProps)(CollectionPage);
