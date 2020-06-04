@@ -2,6 +2,16 @@ import firebase from 'firebase';
 import 'firebase/firestore';
 import 'firebase/auth';
 
+/*
+  -----------------HOLD ON-----------------
+  I KNOW HOW TO HIDE IMPORTANT INFORMATION.
+  BUT THIS POJECT IS DEVELOPED FOR PRACTICING,
+  SO I'M NOT HIDING ANY FIREBASE RELATED INFO.
+  I SUGGEST YOU TO MAKE YOUR OWN FIREBASE
+  PROJECT IF YOU FOLLOW THIS.
+  THANK'S
+  @robin4java 
+*/
 var config = {
   apiKey: 'AIzaSyAzD6El6PXG_UVg1EwKs_ELkAZWrDqvZLU',
   authDomain: 'ecommerz-990b1.firebaseapp.com',
@@ -10,7 +20,7 @@ var config = {
   storageBucket: 'ecommerz-990b1.appspot.com',
   messagingSenderId: '701207838323',
   appId: '1:701207838323:web:06614af0ee677fc60bb406',
-  measurementId: 'G-22CXG8KMZ9'
+  measurementId: 'G-22CXG8KMZ9',
 };
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
@@ -27,7 +37,7 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
         displayName,
         email,
         createAt,
-        ...additionalData
+        ...additionalData,
       });
     } catch (error) {
       console.log('error creating user', error.message);
