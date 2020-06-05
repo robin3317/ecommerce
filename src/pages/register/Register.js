@@ -1,12 +1,13 @@
 import React from 'react';
 import Signin from '../../components/signin/Signin';
 import Signup from '../../components/signup/Signup';
+import { RegisterContainer } from './Register.styles';
 
 const Register = () => (
-  <div className="register">
+  <RegisterContainer>
     <Signin />
     <Signup />
-  </div>
+  </RegisterContainer>
 );
 
 export default Register;
