@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { auth, createUserProfileDocument } from './firebase/firebase';
+import {
+  auth,
+  createUserProfileDocument,
+  addCollectionAndDocuments,
+} from './firebase/firebase';
 
 import Homepage from './pages/homepage/Homepage';
 import ShopPage from './pages/shop/Shop';
@@ -34,6 +38,14 @@ class App extends Component {
         });
       } else {
         setCurrentUser(userAuth);
+
+        // addCollectionAndDocuments(
+        //   'collections',
+        //   collectionArray.map(({ title, items }) => ({
+        //     title,
+        //     items,
+        //   }))
+        // );
       }
     });
   };
