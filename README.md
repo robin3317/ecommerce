@@ -1,4 +1,4 @@
-### This is the practice project of a course, All credit goes to the instructors Andrei Neagoie and Yihua Zhang. Course Link: https://www.udemy.com/course/complete-react-developer-zero-to-mastery/
+### This is a practice project where i follow some online courses and resources to make a fully functional responsive e-commerce web application.
 
 # Things I am practicing:
 
